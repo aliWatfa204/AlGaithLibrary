@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>الكتب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>مكتبة الغيث</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="Books.html" class="active">الكتب</a>
+            <a href="AboutUs.html">من نحن</a>
+        </nav>
+    </header>
+
+    <main class="home">
+        <h2>قائمة الكتب</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>رمز الكتاب ISBN</th>
+                    <th>العنوان</th>
+                    <th>السعر (ل.س)</th>
+                    <th>المزيد</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- الكتاب الأول -->
+                <tr>
+                    <td>978-9770916738</td>
+                    <td>ألف ليلة وليلة</td>
+                    <td>25000</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="radio" name="book" value="978-9770916738" data-title="ألف ليلة وليلة"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5" class="rtl">
+                        <strong>الناشر:</strong> دار المعارف<br>
+                        <strong>تصنيف الكتاب:</strong> قصص شعبية<br>
+                        <strong>ملخص:</strong>ألف ليلة وليلة هو مجموعة قصصية خيالية تمزج بين السحر والمغامرة والحكمة. تروي شهرزاد القصص للملك شهريار لتؤجل مصيرها، ومن أشهرها: "علاء الدين والمصباح السحري"، "رحلات السندباد"، و"علي بابا والأربعون حرامي". الكتاب يمثل التراث الأدبي للشرق الأوسط وجنوب آسيا.<br>
+                        <strong>أشهر القصص:</strong> علاء الدين، رحلات السندباد، علي بابا.
+                    </td>
+                </tr>
+
+                <!-- الكتاب الثاني -->
+                <tr>
+                    <td>978-9953891718</td>
+                    <td>موسم الهجرة إلى الشمال</td>
+                    <td>12000</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="radio" name="book" value="978-9953891718" data-title="موسم الهجرة إلى الشمال"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5" class="rtl">
+                        <strong>الناشر:</strong> المؤسسة العربية للدراسات والنشر<br>
+                        <strong>تصنيف الكتاب:</strong> رواية عربية<br>
+                        <strong>ملخص:</strong>**موسم الهجرة إلى الشمال** هي رواية عربية للكاتب السوداني الطيب صالح، تروي قصة مصطفى سعيد، المثقف السوداني الذي يعيش صراعًا داخليًا بين الشرق والغرب، والراوي الذي يعود إلى قريته ليكتشف تعقيدات الحياة والثقافات المتداخلة. الرواية تسلط الضوء على قضايا الهوية، الاستعمار، والعلاقة بين الشرق والغرب.
+                    </td>
+                </tr>
+
+                <!-- الكتاب الثالث -->
+                <tr>
+                    <td>978-9953451080</td>
+                    <td>الخبز الحافي</td>
+                    <td>10000</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="radio" name="book" value="978-9953451080" data-title="الخبز الحافي"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5" class="rtl">
+                        <strong>الناشر:</strong> المركز الثقافي العربي<br>
+                        <strong>تصنيف الكتاب:</strong> سيرة ذاتية<br>
+                        <strong>ملخص:</strong>الخبز الحافي هي سيرة ذاتية للكاتب المغربي محمد شكري، تسرد معاناته في طفولته الفقيرة والصعبة، حيث يواجه الجوع والعنف والحرمان في مجتمع مضطرب. يقدم الكتاب وصفًا جريئًا لحياة المهمشين ويعكس صراع الإنسان مع الفقر والجهل بحثًا عن الكرامة والتحرر.
+                    </td>
+                </tr>
+
+                <!-- الكتاب الرابع -->
+                <tr>
+                    <td>978-9953314224</td>
+                    <td>رجال الشمس</td>
+                    <td>22000</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="radio" name="book" value="978-9953451080" data-title="رجال الشمس"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5" class="rtl">
+                        <strong>الناشر:</strong>دار الطليعة، بيروت، لبنان<br>
+                        <strong>تصنيف الكتاب:</strong>رواية أدبية، أدب المقاومة<br>
+                        <strong>ملخص:</strong>رواية فلسطينية تسلط الضوء على معاناة الفلسطينيين بعد النكبة من خلال قصة ثلاثة رجال يحاولون الهجرة بشكل غير شرعي إلى الكويت بحثًا عن حياة أفضل. تكشف الرواية عن صراع الإنسان مع الفقر واليأس، وتنتهي بمأساة مؤلمة ترمز للواقع الفلسطيني.
+                    </td>
+                </tr>
+
+                <!-- الكتاب الخامس -->
+                <tr>
+                    <td>978-9953283711</td>
+                    <td>حي بن يقظان</td>
+                    <td>15000</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="radio" name="book" value="978-9953451080" data-title="حي بن يقظان"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5" class="rtl">
+                        <strong>الناشر:</strong>مؤسسة هنداوي أو دار المعارف<br>
+                        <strong>تصنيف الكتاب:</strong>فلسفة، أدب عربي كلاسيكي.<br>
+                        <strong>ملخص:</strong>رواية فلسفية رمزية تحكي قصة طفل يُدعى "حي بن يقظان" ينشأ وحيدًا في جزيرة نائية، ويعتمد على نفسه لفهم العالم من حوله. من خلال تأملاته وتجربته الذاتية، يصل إلى اكتشافات فلسفية وروحية حول الكون والخالق.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href=#next><button id="confirmBookButton" style="margin-right: 46%;">متابعة</button></a>
+
+        <div id="orderFormContainer" class="hidden">
+            <h2 id="next">طلب الكتاب</h2>
+            <form id="orderForm">
+                <p id="selectedBook"></p>
+
+                <label for="fullName">الاسم الكامل باللغة العربية:</label>
+                <input type="text" id="fullName" name="fullName" pattern="^[\u0621-\u064A\s]+$" placeholder="أدخل اسمك الكامل"><br>
+
+                <label for="idNumber">الرقم الوطني:</label>
+                <input type="text" id="idNumber" name="idNumber" required pattern="\d{11}" placeholder="11 رقماً"><br>
+
+                <label for="birthDate">تاريخ الميلاد:</label>
+                <input type="date" id="birthDate" name="birthDate"><br>
+
+                <label for="phoneNumber">رقم الموبايل:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^(09[123456789]\d{7})$" placeholder="رقم صحيح يبدأ بـ 09"><br>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com"><br>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 مكتبة الغيث. جميع الحقوق محفوظة. | <a href="callto:+963987654321">اتصل بنا</a></p>
+    </footer>
+</body>
+</html>

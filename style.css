@@ -1,0 +1,162 @@
+/* تنسيق أساسي */
+body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    background-image: url('ba.jpg');
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background: rgba(73, 54, 40,90%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: right;
+}
+
+header nav {
+    margin-top: 10px;
+    text-align: right;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a.active {
+    text-decoration: underline;
+    color: gold;
+}
+
+/* تنسيق زر "متابعة" */
+button {
+    padding: 10px 20px;
+    background: #AB886D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #493628;
+}
+
+/* تنسيق قسم اختيار الكتاب */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: rgb(171, 136, 109);
+    color: #fff;
+}
+
+table td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table td:hover {
+    background-color: #f1f1f1;
+}
+
+.hidden {
+    display: none;
+}
+
+/* تنسيق نموذج الطلب */
+form {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #AB886D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #493628;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background: rgba(171, 136, 109, 90%);
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.home {
+    max-width: 75%;
+    margin: 20px auto;
+    background: rgb(228, 224, 225, 80%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.rtl{
+    text-align: right;
+}
